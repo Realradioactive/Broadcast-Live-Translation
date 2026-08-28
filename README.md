@@ -22,6 +22,9 @@
 
 ---
 <img width="673" height="677" alt="image" src="https://github.com/user-attachments/assets/95a3ca61-895e-4fa4-9c77-94cc4dc022fc" />
+---
+
+
 ## 🛠️ Sistem Gereksinimleri ve Teknolojiler
 
 * **Python:** 3.11+
