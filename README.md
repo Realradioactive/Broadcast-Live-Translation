@@ -7,6 +7,7 @@
 ![Whisper](https://img.shields.io/badge/AI-Faster_Whisper-orange?style=for-the-badge&logo=openai&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
+
 ---
 
 ## 🚀 Öne Çıkan Özellikler
@@ -20,7 +21,7 @@
 * **Güvenli Arayüz (Secure UI):** DeepL API anahtarlarınızı şifreli (Password Mode) tutar ve göz butonuyla gizliliğini korur. Tüm ayarlarınızı `settings.json` ile hatırlar.
 
 ---
-
+<img width="673" height="677" alt="image" src="https://github.com/user-attachments/assets/95a3ca61-895e-4fa4-9c77-94cc4dc022fc" />
 ## 🛠️ Sistem Gereksinimleri ve Teknolojiler
 
 * **Python:** 3.11+
