@@ -1,0 +1,15 @@
+{
+    "stt_mode": "Offline (Lokal Whisper)",
+    "engine": "Offline (Lokal Helsinki-NLP)",
+    "api_key": "2026f89e-ff8d-4a39-88c5-0d2775946341:fx",
+    "src_lang": "tr",
+    "dest_lang": "en",
+    "whisper_size": "large-v3",
+    "srt_path": "C:\\Users\\Administrator\\Desktop\\yayinaltyazi.srt",
+    "pause_thresh": 8,
+    "opacity": 70,
+    "osd_enabled": true,
+    "srt_enabled": true,
+    "blacklist": "elderman, altyaz\u0131 m.k., amara.org, sync, corrected, \u00e7eviri:, altyaz\u0131:",
+    "vad_ms": 5
+}

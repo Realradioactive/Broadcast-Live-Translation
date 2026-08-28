@@ -1,0 +1,22 @@
+# 1. Projenin klasöründe sanal ortam oluştur
+python -m venv cevirmen_env
+
+# 2. Sanal ortamı aktif et (Windows için)
+cevirmen_env\Scripts\activate
+# (Linux/Mac kullanıyorsan: source cevirmen_env/bin/activate)
+
+# 3. Sadece bu ortam için gerekli olanları temizce kur
+pip install PyQt5 Flask SpeechRecognition deep-translator vosk sounddevice argostranslate requests transformers torch pyaudio
+
+
+
+Mimarî Devrim: Tek Dinleyici (Unified Listener)
+Faster-Whisper'a geçerken mimaride harika bir temizlik yaptım:
+Vosk'un kendi mikrofon döngüsüne (pyaudio) ihtiyacımız kalmadı. İnternetsiz ses dinleme işini de speech_recognition kütüphanesinin içine aldım. Artık program tek bir asenkron dinleyiciyle çalışıyor. Sesi paketliyor, kuyruğa atıyor. Eğer Google seçili ise paketi internete yolluyor, Whisper seçili ise paketi doğrudan ekran kartına (GPU) fırlatıyor.
+
+Hemen terminali açıp eksik kütüphaneleri kurmalısın (Sanal ortamını aktif etmeyi unutma!):
+
+Bash
+pip install faster-whisper numpy
+Aşağıdaki V8 sürümü, arayüzden Whisper'ın model boyutunu (tiny, base, small, medium, large-v3) seçmene olanak tanır. Programı çalıştırdığında modeli otomatik olarak HuggingFace'ten indirecek, zulalayacak ve doğrudan CUDA çekirdeklerine (VRAM) yükleyecektir.
+pip install faster-whisper numpy

@@ -1,0 +1,24 @@
+1. Çevreyi Hazırla
+Daha önce oluşturduğumuz sanal ortamın (venv) aktif olduğundan emin ol ve derleyiciyi kur:
+
+Bash
+pip install pyinstaller
+2. İnşayı Başlat
+Terminalde tam olarak şu komutu çalıştır. Bu komut, konsol penceresini gizleyecek (--windowed), senin ikonunu kullanacak ve klasör mimarisiyle derleyecektir:
+
+Bash
+pyinstaller --noconfirm --onedir --windowed --icon "icon.ico" --name "YayinCevirmeni" app.py
+
+python -m PyInstaller --noconfirm --onedir --windowed --icon "icon.ico" --name "YayinCevirmeni" app.py
+
+3. Ürünü Al
+İşlem bittiğinde proje dizininde dist adında yeni bir klasör oluşacak.
+
+dist\YayinCevirmeni\ klasörünün içine gir.
+
+İşte o klasör senin nihai ürünündür. İçindeki YayinCevirmeni.exe dosyasına çift tıklayarak sistemi başlatabilirsin. O klasörü .zip yapıp istediğin Windows bilgisayara taşıyıp çalıştırabilirsin.
+
+
+
+
+python -m PyInstaller --noconfirm --onedir --windowed --icon "icon.ico" --name "YayinCevirmeni" app.py
