@@ -1,4 +1,3 @@
-Markdown
 # 🌐 Canlı Çeviri ve Yayıncı Altyazı Merkezi (Live Subtitle & Translation Center)
 
 > Yerel GPU hızlandırmalı, sıfır gecikmeli, çevrimdışı (offline) veya çevrimiçi (online) çalışabilen, masaüstü şeffaf altyazı (OSD) ve SRT kayıt özellikli profesyonel yayıncı aracı.
@@ -73,39 +72,3 @@ Model Seçimi: Canlı yayın performansı için medium veya large-v3 modellerini
 📄 Lisans
 Bu proje MIT Lisansı altında açık kaynak olarak sunulmuştur. Dilediğiniz gibi geliştirebilir, değiştirebilir ve ticari/bireysel olarak kullanabilirsiniz.
 
-
-
-
-
-Canlı Çeviri ve Yayıncı Altyazı Merkezi
-Yerel GPU hızlandırmalı, sıfır gecikmeli, çevrimdışı veya çevrimiçi çalışabilen, masaüstü şeffaf altyazı (OSD) ve SRT kayıt özellikli profesyonel yayıncı aracı.
-
-Öne Çıkan Özellikler
-Çift Mod Mimarisi (Online & Offline): İster Google STT ve Google/DeepL çeviri servislerini kullanın, ister internet kablosunu çekip OpenAI Faster-Whisper ve Helsinki-NLP modelleriyle tamamen lokalde (GPU destekli) çalışın.
-
-Asenkron Kuyruk (Queue) Mimarisi: Dinleme ve Çeviri/İşleme süreçleri tamamen izole edilmiştir. İnternet veya model gecikmelerinde asla kelime/cümle kaybı yaşanmaz.
-
-Masaüstü Şeffaf Altyazı (OSD): Oyun oynarken (örn. Rust, CS:GO) veya yayın yaparken, istediğiniz ekranda üstte kalan (Always-on-Top), şeffaflığı ayarlanabilir modern altyazı penceresi.
-
-DaVinci Resolve & YouTube Uyumlu SRT Kaydı: Konuşmalarınızı milisaniyelik zaman damgalarıyla anlık olarak .srt formatına diske yazar.
-
-Gelişmiş Halüsinasyon ve VAD Filtreleri: Yapay zekanın sessizlikte uydurabileceği korsan altyazı imzalarını Kara Liste (Blacklist) filtresiyle otomatik olarak çöpe atar.
-
-Güvenli Arayüz (Secure UI): DeepL API anahtarlarınızı şifreli tutar ve göz butonuyla gizliliğini korur. Tüm ayarlarınızı settings.json ile hatırlar.
-
-Kurulum ve Çalıştırma
-Repoyu indirin ve proje klasöründe terminal açın.
-
-Sanal ortam oluşturun ve aktif edin:
-python -m venv venv
-venv\Scripts\activate
-
-Gerekli kütüphaneleri yükleyin:
-pip install PyQt5 Flask SpeechRecognition deep-translator transformers torch faster-whisper numpy pyaudio requests
-
-Uygulamayı başlatın:
-python app.py
-
-.Exe Derleme
-Python ve sanal ortam bağımlılığı olmadan çalıştırmak için:
-python -m PyInstaller --noconfirm --onedir --windowed --icon "icon.ico" --name "YayinCevirmeni" app.py
